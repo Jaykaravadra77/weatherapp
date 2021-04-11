@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="font-awesome-animation.min.css"> -->
+
+
+  <title>Hello, world!</title>
+  <style>
+    h1 {
+      font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+      font-size: 48px;
+      padding: 2px 2px;
+      text-align: center;
+      text-transform: uppercase;
+      text-rendering: optimizeLegibility;
+
+    }
+
+    .deepshd {
+      text-align: center;
+      border-radius: 5%;
+      height: 60px;
+      color: #f1f1f1;
+      background-color: rgb(162, 149, 180);
+      letter-spacing: .1em;
+      text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+    }
+
+    @keyframes crescendo {
+      0% {
+        transform: scale(.8);
+      }
+
+      100% {
+        transform: scale(1.0);
+      }
+    }
+
+    .animation {
+      animation: crescendo 1.5s alternate infinite ease-in;
+
+    }
+
+    @import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      font-family: "Exo", sans-serif;
+    }
+
+    .context {
+      width: 100%;
+      position: absolute;
+      /* top: 50vh; */
+      height: auto;
+    }
+
+    .context h1 {
+      text-align: center;
+      color: #fff;
+      font-size: 50px;
+    }
+
+    .area {
+      background: #4e54c8;
+      background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+      width: 100%;
+      height: 100vh;
+    }
+
+    .circles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .circles li {
+      position: absolute;
+      display: block;
+      list-style: none;
+      width: 20px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      animation: animate 25s linear infinite;
+      bottom: -150px;
+    }
+
+    .circles li:nth-child(1) {
+      left: 25%;
+      width: 80px;
+      height: 80px;
+      animation-delay: 0s;
+    }
+
+    .circles li:nth-child(2) {
+      left: 10%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 2s;
+      animation-duration: 12s;
+    }
+
+    .circles li:nth-child(3) {
+      left: 70%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 4s;
+    }
+
+    .circles li:nth-child(4) {
+      left: 40%;
+      width: 60px;
+      height: 60px;
+      animation-delay: 0s;
+      animation-duration: 18s;
+    }
+
+    .circles li:nth-child(5) {
+      left: 65%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 0s;
+    }
+
+    .circles li:nth-child(6) {
+      left: 75%;
+      width: 110px;
+      height: 110px;
+      animation-delay: 3s;
+    }
+
+    .circles li:nth-child(7) {
+      left: 35%;
+      width: 150px;
+      height: 150px;
+      animation-delay: 7s;
+    }
+
+    .circles li:nth-child(8) {
+      left: 50%;
+      width: 25px;
+      height: 25px;
+      animation-delay: 15s;
+      animation-duration: 45s;
+    }
+
+    .circles li:nth-child(9) {
+      left: 20%;
+      width: 15px;
+      height: 15px;
+      animation-delay: 2s;
+      animation-duration: 35s;
+    }
+
+    .circles li:nth-child(10) {
+      left: 85%;
+      width: 150px;
+      height: 150px;
+      animation-delay: 0s;
+      animation-duration: 11s;
+    }
+
+    @keyframes animate {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+      }
+
+      100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+      }
+    }
+  </style>
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+  <script src="https://kit.fontawesome.com/a6afbaf286.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+
+    <a class="navbar-brand" href="#">
+
+      <h1 class="deepshd">Note Weather</h1>
+
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        </li>
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+    </div>
+  </nav>
+  
+  <div class="context">
+    <div class="container">
+      <div class="border border-light p-3 mb-4">
+        <div class=" d-flex align-items-center justify-content-center" style="height: 500px">
+  
+          <div class="card col-md-6 " style="height:400px;background: rgb(56, 54, 54);">
+            <div class="card-body">
+              <h5 class="card-title ">
+  
+              </h5>
+  
+              <div class=" row justify-content-center">
+  
+                <div class="icon col-md-12 text-center">
+                  <h1 id="icon" class="animation" style="color:rgb(221, 140, 33)"> </i></h1>
+                </div>
+  
+                <div class="location col-md-12 text-center">
+                  <h1 class="text-white">{%name%} | {%country%}</h1>
+                </div>
+                <div class="date col-md-12 text-center">
+                  <h5 style="color: rgb(127, 160, 211);" id="date"></h5>
+                </div>
+                <div class="weather">
+                  <h1 class="text-white"><i style="color: rgb(23, 217, 231);"
+                      class="fas fa-cloud fa"></i>{%weatherstatus%} | {%temp%}°C
+                  </h1>
+                </div>
+                <div class="time col-md-12 text-center">
+                  <h5 id="time" style="color: rgb(127, 160, 211);"></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+    </div>
+  
+    </div>
+    </div>
+  </div>
+
+
+  <div class="area">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <script>
+    // let date = document.getElementById('date');
+
+    const currentDate = new Date();
+    const currentDayOfMonth = currentDate.getDate();
+    const currentMonth = currentDate.getMonth(); // Be careful! January is 0, not 1
+    const currentYear = currentDate.getFullYear();
+    var weekday = new Array(7);
+    weekday[0] = "Sun";
+    weekday[1] = "Mon";
+    weekday[2] = "Tue";
+    weekday[3] = "Wed";
+    weekday[4] = "Thu";
+    weekday[5] = "Fri";
+    weekday[6] = "Sat";
+
+
+    var n = weekday[currentDate.getDay()];
+
+    const dateString = (currentMonth + 1) + "-" + currentDayOfMonth + "-" + currentYear;
+    date.innerText = dateString + "|" + n;
+
+    currentDate.toLocaleString();       // -> "2/1/2013 7:37:08 AM"
+    // d.toLocaleDateString();   // -> "2/1/2013"
+    // d.toLocaleTimeString();
+    var nightTimeStart = 19;
+    var nightTimeEnd = 6;
+    var currentHour = currentDate.getHours();
+
+    let icon = document.getElementById('icon');
+    if (currentHour > nightTimeStart || currentHour < nightTimeEnd) {
+
+      icon.innerHTML = `<i class="fas fa-moon fa-2x"></i>`;
+    } else {
+      icon.innerHTML = `<i class="fas fa-sun fa-2x"></i>`;
+    }
+    let time = document.getElementById('time');
+    time.innerText = currentDate.toLocaleTimeString();
+
+  </script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
